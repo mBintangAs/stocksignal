@@ -131,7 +131,7 @@ def get_signal_logic():
         saham['news'] = news  # Tambahkan list berita ke objek saham
     # Kirim data ke API eksternal
     post_api(api_url, {"signal": top_3})
-    # for message in top_3:
-    #     send_telegram_message(message)
+    for message in top_3:
+        send_telegram_message(message)
     # Kembalikan hasil sebagai JSON
 

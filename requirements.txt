@@ -2,3 +2,7 @@ yfinance
 ta 
 pandas 
 feedparser
+celery
+flask
+flask_cors
+redis
