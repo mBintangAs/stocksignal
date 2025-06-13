@@ -2,7 +2,7 @@ from ta.trend import SMAIndicator, MACD
 from ta.momentum import RSIIndicator
 from ta.volatility import AverageTrueRange
 from news import get_news
-from telegram import send_telegram_message
+from tele import send_telegram_message
 import yfinance as yf
 import pandas as pd
 from flask import  jsonify

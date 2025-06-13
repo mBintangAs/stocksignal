@@ -6,3 +6,4 @@ celery
 flask
 flask_cors
 redis
+python-telegram-bot
