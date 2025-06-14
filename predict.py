@@ -135,3 +135,5 @@ def get_signal_logic():
         send_telegram_message(message)
     # Kembalikan hasil sebagai JSON
 
+if __name__ == "__main__":
+    get_signal_logic()
