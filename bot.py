@@ -11,7 +11,9 @@ async def cek(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if r.ok:
             msg = "Signal akan segera dikirimkan ke Telegram."
         else:
-            msg = "Sabar permintaan sedang diproses, silakan tunggu beberapa saat."
+            msg = f"Terjadi kesalahan: {r.status_code} - {r.text}"
+            with open("log.txt", "a") as log_file:
+                log_file.write(f"{msg}\n")
     except Exception as e:
         msg = f"Gagal request: {e}"
     await update.message.reply_text(msg)
